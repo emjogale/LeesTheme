@@ -1,0 +1,66 @@
+/*this was a hangover from the mr digital project. Do I even need the .page-wrap?
+
+.page-wrap {
+	padding: 1rem 0;
+}*/
+@font-face { 
+  font-family: 'Oswald', sans-serif;
+  src: url(); 
+  font-weight: normal; 
+  }
+
+#title-box {
+    background-color: black;
+    font-family: 'Oswald600', Helvetica, Arial, serif;
+    color: white;
+}
+
+#title-box a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
+.card-body a {
+  color: black;
+}
+
+a.nav-link {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+
+.current-menu-item a.nav-link {
+  background-color: black;
+  color: white;
+}
+
+
+a.nav-link:hover {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+/*div {
+	border: black dotted 1px;
+}*/
+
+.card h3 {
+  color: black;
+  font-family: 'Oswald', Helvetica, Arial, serif;
+}
+
+h1 {
+  font-family: 'Oswald', Helvetica, Arial, serif;
+}
+
+img.card-image {
+  overflow: hidden;
+}
+
