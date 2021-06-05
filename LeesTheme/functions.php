@@ -64,52 +64,9 @@ function my_sidebars(){
 }
 add_action('widgets_init','my_sidebars');
 
-/*function my_first_post_type(){
-
-	$args = array(
-	   'labels' => array(
-			'name' => 'Jewellry',
-			'singular_name' => 'Jewellry-item',
-		),
-		'hierarchical' => true,
-		'public' => true,
-		'has_archive' => true,
-		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
-		'menu_icon' => 'dashicons-admin-appearance',
-
-	);
-
-	register_post_type('jewellry', $args);
-
-
-}
-add_action('init', 'my_first_post_type');
-
-function my_first_taxonomy(){
-
-	$args = array(
-	   'labels' => array(
-			'name' => 'Jewellry-type',
-			'singular_name' => 'Jewellry-item',
-		),
-		'hierarchical' => true,
-		'public' => true,
-		'has_archive' => true,
-		'supports' => array('title', 'editor', 'thumbnail'),
-		'menu_icon' => 'dashicons-admin-appearance',
-
-	);
-
-	register_taxonomy('jewellry-type', array('jewellry'), $args);
-
-
-}
-add_action('init', 'my_first_taxonomy');*/
-
-
 //Custom image sizes
-add_image_size('blog-large', 800, 400, false);
-add_image_size('blog-small', 300, 300, false);
+add_image_size('blog-large', 900, 700, false);
+add_image_size('blog-small', 280, 280, false);
 
 /**
  * Register Custom Navigation Walker
@@ -127,3 +84,26 @@ function special_nav_class($classes, $item){
      }
      return $classes;
 }
+
+// change the read more ellipsis
+function change_link_excerpt( $more ) {
+	if ( is_admin() ) {
+		return $more;
+	}
+
+	// Change text to ..., and return change
+	return '... ';
+ }
+ add_filter( 'excerpt_more', 'change_link_excerpt', 999 );
+
+// customise the excerpt
+// function my_excerpts( $length ) {
+// 	// Don't change anything inside /wp-admin/
+// 	if ( is_admin() ) {
+// 		return $length;
+// 	}
+// 	// Set excerpt length to 30 words
+// 	return 30;
+// }
+// // "999" priority makes this run last of all the functions hooked to this filter, meaning it overrides them
+// add_filter( 'excerpt_length', 'my_excerpts', 999 );
