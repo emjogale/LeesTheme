@@ -3,6 +3,48 @@
 		<div class="card d-flex border-0 text-dark">
 			<div class="row no-gutters">
 				<div class="col-12 col-md-4 d-flex align-items-center">
+					<a href="index.php?page_id=1310">
+						<?php if (has_post_thumbnail()): ?>
+							<img src="<?php the_post_thumbnail_url('blog-small'); ?>"
+								alt="<?php the_title(); ?>"
+								class="card-img px-3 px-md-0">
+						<?php endif; ?>
+					</a>
+				</div>
+				<div class="col-12 col-md-8">
+					<div class="card-body">
+						<div class="blog-content">
+							<p>
+								If we’ve shared a workspace, you will know me for my appreciation of New Order, World War II knowledge and biscuit generosity. I’m a writer/sub-editor with a 30-year career that includes full-time positions at <em>GQ</em>, <em>Motor Sport</em>, <em>Jack and</em> <em>Front</em>, and freelance stints at <em>Monocle</em>, <em>NME and</em> <em>The Guide</em> (<em>Guardian</em>). I’ve wangled interviews with many of my heroes and written articles on many niche subjects such as electricity pylons and concrete lamp-posts. I’ve just finished a novel – a ghost yarn titled <em>Brian Clough, Geoff Boycott, Peter O’Toole, Tony Wilson, Mark E Smith And Tim Healy In A Haunted House Near Carlisle, 1984</em>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card d-flex border-0 text-dark">
+			<div class="row no-gutters">
+				<div class="col-12 col-md-4 d-flex align-items-center">
+					<a href="index.php?page_id=1673">
+						<?php if (has_post_thumbnail()): ?>
+							<img src="<?php the_post_thumbnail_url('blog-small'); ?>"
+								alt="<?php the_title(); ?>"
+								class="card-img px-3 px-md-0">
+						<?php endif; ?>
+					</a>
+				</div>
+				<div class="col-12 col-md-8">
+					<div class="card-body">
+						<div class="blog-content">
+							<p>One of the unsung architects of the Manchester sound, the Salford stalwart has influenced every major musical movement of the past 35 years. Whether pioneering post-punk with Joy Division, melding rock/dance with New Order, or blowing £1m on a nightclub, “Barney” was there. As his band limber up for an Olympic concert, GQ pays tribute to the straight man of Madchester</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card d-flex border-0 text-dark">
+			<div class="row no-gutters">
+				<div class="col-12 col-md-4 d-flex align-items-center">
 					<a href="index.php?page_id=1673">
 						<?php if (has_post_thumbnail()): ?>
 							<img src="<?php the_post_thumbnail_url('blog-small'); ?>"
@@ -15,7 +57,7 @@
 					<div class="card-body">
 						<div class="blog-content">
 							<p>
-								If we’ve shared a workspace, you'll know me for my long-standing appreciation of New Order, World War II knowledge and biscuit generosity. I’m a features writer, advertorial writer and sub-editor with a career that includes full-time positions at <i>GQ</i>, <i>Motor Sport</i>, <i>Grand Designs</i>, <i>Jack</i>, <i>Front</i> and <i>Amateur Photographer</i>, and freelance stints at <i>The Week Junior</i>, <i>Monocle</i>, <i>Men’s Health</i>, <i>NME</i>, <i>The Guide</i> (Guardian) and <i>Wired</i>. I’ve wangled interviews with many of my heroes and written articles on all sorts of niche subjects such as football shirts, electricity pylons and concrete lamp-posts – some of which you’ll find here. lg@leegale.co.uk.
+								If we’ve shared a workspace, you will know me for my appreciation of New Order, World War II knowledge and biscuit generosity. I’m a writer/sub-editor with a 30-year career that includes full-time positions at <em>GQ</em>, <em>Motor Sport</em>, <em>Jack and</em> <em>Front</em>, and freelance stints at <em>Monocle</em>, <em>NME and</em> <em>The Guide</em> (<em>Guardian</em>). I’ve wangled interviews with many of my heroes and written articles on many niche subjects such as electricity pylons and concrete lamp-posts. I’ve just finished a novel – a ghost yarn titled <em>Brian Clough, Geoff Boycott, Peter O’Toole, Tony Wilson, Mark E Smith And Tim Healy In A Haunted House Near Carlisle, 1984</em>.
 							</p>
 						</div>
 					</div>
@@ -32,7 +74,7 @@ endif; ?>
 <?php
 $args = array(
 	'post_type' => 'post',
-	'posts_per_page' => 3,
+	'posts_per_page' => 1,
 	'category__in' => array(5)
 
 );
